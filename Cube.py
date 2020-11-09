@@ -106,3 +106,19 @@ class Cube:
     tmp = cube[a[0]][a[1]][a[2]]
     cube[a[0]][a[1]][a[2]] = cube[b[0]][b[1]][b[2]]
     cube[b[0]][b[1]][b[2]] = tmp
+
+	def rotate(face, turn=1):
+    """
+    Rotates the given face by the given number of turns
+    @param face - The face that is to be rotated
+    @param turn - The number of turns to be performed on the given face; default value set to 0
+    """
+   
+    for i in range(turn):
+        for x in range(0, 3, 1):
+            for y in range(3, 12, 3):
+                swap(link[face][x],link[face][y + x])
+        x = center[face]
+        for y in range(0, 2, 1):
+            for z in range(2, 8, 2):
+                swap(x + faceLink[y], x + faceLink[z + y])
