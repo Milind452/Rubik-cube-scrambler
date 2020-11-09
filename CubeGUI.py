@@ -75,3 +75,9 @@ class CubeGUI:
                     if(self.faces[face][i][j] == 'y'):
                         pygame.draw.rect(self.win, self.yellow, [
                             j*gap+300*x,  i*gap+y, self.width/3, self.height/3])
+
+        def draw(self):
+        self.win.fill((0, 0, 0))
+        gap = self.width/3
+        for face in range(len(self.faces)):
+            self.drawFace(face, gap)
