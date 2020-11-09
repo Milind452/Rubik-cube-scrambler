@@ -60,7 +60,21 @@ def fixScramble(scramble):
 
         return self.fixScramble(scramble)
 
-        
+    def Scrambler():
+        for x in scramble:
+            face = x[0]
+            if len(x) < 2:
+                direction = None
+            else:
+                direction = x[1]
+            turn = 0
+            if direction == "'":
+                turn = 3
+            elif direction == "2":
+                turn = 2
+            else:
+                turn = 1
+            rotate(face, turn)
 
 
     
