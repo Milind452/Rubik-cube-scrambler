@@ -96,3 +96,13 @@ class Cube:
 			for k in range(0, 3, 1):
 				print(cube[5][i][k], end=" ")
 			print("\n")
+		
+	def swap(a, b):
+    """
+    Swaps two elements in the cube matrix whose coordinates are given as inputs
+    @param a - First coordinate
+    @param b - Second coordinate
+    """
+    tmp = cube[a[0]][a[1]][a[2]]
+    cube[a[0]][a[1]][a[2]] = cube[b[0]][b[1]][b[2]]
+    cube[b[0]][b[1]][b[2]] = tmp
