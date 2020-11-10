@@ -5,6 +5,8 @@ from CubeGUI import *
 
 cube = Cube()
 scrambler = Scrambler()
+scramble = scrambler.generateScramble(cube.faces, cube.turns)
+scrambler.Scrambler(scramble)
 
 
 win = pygame.display.set_mode((1200, 900))
