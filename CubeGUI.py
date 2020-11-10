@@ -1,5 +1,4 @@
 import pygame
-import time
 pygame.font.init()
 
 
@@ -43,10 +42,10 @@ class CubeGUI:
     def drawFace(self, face, gap):
         """
         Draw one square of the cube
-        @param face - represents a face of the cube 
+        @param face - represents a face of the cube
         @param gap - coordinate iterator
         """
-        
+
         x = 1
         y = 0
         if(face == 0):
