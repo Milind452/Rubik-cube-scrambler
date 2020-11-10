@@ -73,3 +73,7 @@ class Scrambler:
                 turn = 1
             cube.rotate(face, turn)
 
+    def showScramble(self, scramble):
+        for i in scramble:
+            print(i, end=" ")
+

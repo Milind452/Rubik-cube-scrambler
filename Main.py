@@ -8,6 +8,7 @@ scrambler = Scrambler()
 scramble = scrambler.generateScramble(cube.faces, cube.turns)
 scrambler.Scrambler(scramble, cube)
 
+scrambler.showScramble(scramble)
 cube.showCube()
 
 
