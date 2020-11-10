@@ -116,7 +116,7 @@ class Cube:
         @param turn - The number of turns to be performed on the given face; default value set to 0
         """
 
-        for i in range(turn):
+        for _ in range(turn):
             for x in range(0, 3, 1):
                 for y in range(3, 12, 3):
                     self.swap(self.link[face][x], self.link[face][y + x])

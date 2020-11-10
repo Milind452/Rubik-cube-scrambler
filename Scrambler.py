@@ -24,7 +24,7 @@ class Scrambler:
                     scramble[i] = faces[random.randint(0, len(faces) - 1)] + cur[1]
                 cur = scramble[i]
             prev = cur
-        
+
         opp = {'F': 'B', 'R': 'L', 'U': 'D',
             'B': 'F', 'L': 'R', 'D': 'U'}
         for i in range(1, len(scramble), 1):
@@ -48,7 +48,7 @@ class Scrambler:
         """
 
         scramble = list()
-        for i in range(0, self.scrambleLength, 1):
+        for _ in range(0, self.scrambleLength, 1):
             tmp = random.randint(0, len(turns) - 1)
             if tmp == 0:
                 scramble.append(faces[random.randint(0, len(faces) - 1)] + "")
