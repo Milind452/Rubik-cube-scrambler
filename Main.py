@@ -8,10 +8,10 @@ scrambler = Scrambler()
 scramble = scrambler.generateScramble(cube.faces, cube.turns)
 scrambler.Scrambler(scramble, cube)
 
-scrambler.showScramble(scramble)
-cube.showCube()
+# scrambler.showScramble(scramble)
+# cube.showCube()
 
-win = pygame.display.set_mode((800, 600))
+# win = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Faces")
 gui = CubeGUI(9, 12, 200, 200, win, cube.cube)
 run = True
