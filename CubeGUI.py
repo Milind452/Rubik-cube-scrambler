@@ -4,7 +4,6 @@ pygame.font.init()
 
 
 class CubeGUI:
-    # faces = cube
     # colors
     white = [255, 255, 255]
     green = [0, 255, 0]
@@ -36,7 +35,6 @@ class CubeGUI:
             else:
                 pygame.draw.line(self.win, (0, 0, 0), (0 + i *
                                                         self.width/3, 0), (0 + i*self.width/3, 900), 2)
-
 
     def drawFace(self, face, gap):
         x = 1

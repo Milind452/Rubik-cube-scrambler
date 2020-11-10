@@ -11,10 +11,7 @@ scrambler.Scrambler(scramble, cube)
 scrambler.showScramble(scramble)
 cube.showCube()
 
-
 win = pygame.display.set_mode((800, 600))
-# win = pygame.display.set_mode((1366, 768))
-# pygame.transform.scale(picture(1366, 768))
 pygame.display.set_caption("Faces")
 gui = CubeGUI(9, 12, 200, 200, win, cube.cube)
 run = True
@@ -26,6 +23,5 @@ while run:
 		gui.grid()
 
 		pygame.display.update()
-
 
 pygame.quit()
