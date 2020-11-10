@@ -33,7 +33,6 @@ class Scrambler:
             cur = scramble[i]
             fut = scramble[i + 1]
             while prev[0] == opp[cur[0]] and prev[0] == fut[0]:
-                tmp = fut[1]
                 scramble[i+1] = faces[random.randint(0, len(faces) - 1)] + fut[1]
                 fut = scramble[i + 1]
         return tuple(scramble)
@@ -56,10 +55,9 @@ class Scrambler:
                 scramble.append(str(faces[random.randint(0, len(faces) - 1)]) + "2")
             else:
                 scramble.append(str(faces[random.randint(0, len(faces) - 1)]) + "'")
-
         return self.fixScramble(scramble, faces)
 
-    def Scrambler(self, scramble):
+    def Scrambler(self, scramble, cube):
         for x in scramble:
             face = x[0]
             if len(x) < 2:
@@ -73,5 +71,5 @@ class Scrambler:
                 turn = 2
             else:
                 turn = 1
-            rotate(face, turn)
+            cube.rotate(face, turn)
 
