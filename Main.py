@@ -1,22 +1,22 @@
 import pygame 
-import Cube
-import Scrambler
-import CubeGUI
+from Cube import *
+from Scrambler import *
+from CubeGUI import *
 
 cube = Cube()
 scrambler = Scrambler()
-gui = CubeGUI()
+
 
 win = pygame.display.set_mode((1200, 900))
 pygame.display.set_caption("Faces")
-board = CubeGUI(9, 12, 300, 300, win)
+gui = CubeGUI(9, 12, 300, 300, win)
 run = True
 while run:
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 			run = False
-		board.draw()
-		board.grid()
+		gui.draw()
+		gui.grid()
 
 		pygame.display.update()
 
