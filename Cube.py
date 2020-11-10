@@ -80,13 +80,13 @@ class Cube:
                 print(" ", end=" ")
             print(" ", end="  ")
             for k in range(0, 3, 1):
-                print(cube[0][i][k], end=" ")
+                print(self.cube[0][i][k], end=" ")
             print("\n")
 
         for i in range(0, 3, 1):
             for j in range(1, 5, 1):
                 for k in range(0, 3, 1):
-                    print(cube[j][i][k], end=" ")
+                    print(self.cube[j][i][k], end=" ")
                 print(" ", end="  ")
             print("\n")
 
@@ -95,7 +95,7 @@ class Cube:
                 print(" ", end=" ")
             print(" ", end="  ")
             for k in range(0, 3, 1):
-                print(cube[5][i][k], end=" ")
+                print(self.cube[5][i][k], end=" ")
             print("\n")
 
     def swap(self, a, b):
@@ -105,9 +105,9 @@ class Cube:
         @param b - Second coordinate
         """
 
-        tmp = cube[a[0]][a[1]][a[2]]
-        cube[a[0]][a[1]][a[2]] = cube[b[0]][b[1]][b[2]]
-        cube[b[0]][b[1]][b[2]] = tmp
+        tmp = self.cube[a[0]][a[1]][a[2]]
+        self.cube[a[0]][a[1]][a[2]] = self.cube[b[0]][b[1]][b[2]]
+        self.cube[b[0]][b[1]][b[2]] = tmp
 
     def rotate(self, face, turn=1):
         """
@@ -119,8 +119,8 @@ class Cube:
         for i in range(turn):
             for x in range(0, 3, 1):
                 for y in range(3, 12, 3):
-                    swap(link[face][x], link[face][y + x])
-            x = center[face]
+                    self.swap(self.link[face][x], self.link[face][y + x])
+            x = self.center[face]
             for y in range(0, 2, 1):
                 for z in range(2, 8, 2):
-                    swap(x + faceLink[y], x + faceLink[z + y])
+                    self.swap(x + self.faceLink[y], x + self.faceLink[z + y])
