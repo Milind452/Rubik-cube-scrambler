@@ -12,16 +12,16 @@ scrambler.Scrambler(scramble, cube)
 # cube.showCube()
 
 # win = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Faces")
-gui = CubeGUI(9, 12, 200, 200, win, cube.cube)
-run = True
-while run:
-	for event in pygame.event.get():
-		if event.type == pygame.QUIT:
-			run = False
-		gui.draw()
-		gui.grid()
+# pygame.display.set_caption("Faces")
+# gui = CubeGUI(9, 12, 200, 200, win, cube.cube)
+# run = True
+# while run:
+# 	for event in pygame.event.get():
+# 		if event.type == pygame.QUIT:
+# 			run = False
+# 		gui.draw()
+# 		gui.grid()
 
-		pygame.display.update()
+# 		pygame.display.update()
 
-pygame.quit()
+# pygame.quit()
