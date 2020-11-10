@@ -13,7 +13,7 @@ class Scrambler:
 
         @return scramble - tuple of the modified scramble
         """
-     
+
         prev = scramble[0]
         for i in range(1, len(scramble), 1):
             cur = scramble[i]

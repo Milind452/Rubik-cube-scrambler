@@ -12,6 +12,15 @@ class CubeGUI:
     red = [255, 0, 0]
 
     def __init__(self, rows, cols, width, height, win, cube):
+        """
+        Constructor for class CubeGUI
+        @param rows - Number of rows in window
+        @param cols - Number of coloumns in window
+        @param width - Width of window
+        @param height - Height of window
+        @param win - Window object from pygame
+        @param cube - Cube representation as a list
+        """
         self.rows = rows
         self.cols = cols
         self.width = width

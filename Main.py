@@ -1,4 +1,4 @@
-# import pygame 
+# import pygame
 from Cube import *
 from Scrambler import *
 from CubeGUI import *
