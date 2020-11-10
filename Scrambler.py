@@ -1,6 +1,7 @@
 import random
 
 class Scrambler:
+    # Length of the scramble
     scrambleLength = 25
 
     def fixScramble(self, scramble, faces):
@@ -58,6 +59,12 @@ class Scrambler:
         return self.fixScramble(scramble, faces)
 
     def Scrambler(self, scramble, cube):
+        """
+        Scramble the cube and reflect results in the cube list
+        @param scramble - tuple containing the scramble
+        @param cube - object of type Cube
+        """
+        
         for x in scramble:
             face = x[0]
             if len(x) < 2:
@@ -74,6 +81,10 @@ class Scrambler:
             cube.rotate(face, turn)
 
     def showScramble(self, scramble):
+        """
+        prints the scramble in a manner that is easy to read
+        """
+
         for i in scramble:
             print(i, end=" ")
 

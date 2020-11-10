@@ -21,6 +21,10 @@ class CubeGUI:
         self.faces = cube
 
     def grid(self):
+        """
+        Draw the grid
+        """
+
         for i in range(self.rows+1):
             if(i % 3 == 0):
                 pygame.draw.line(self.win, (0, 0, 0), (0, 0 +
@@ -37,6 +41,12 @@ class CubeGUI:
                                                         self.width/3, 0), (0 + i*self.width/3, 900), 2)
 
     def drawFace(self, face, gap):
+        """
+        Draw one square of the cube
+        @param face - represents a face of the cube 
+        @param gap - coordinate iterator
+        """
+        
         x = 1
         y = 0
         if(face == 0):
@@ -76,6 +86,10 @@ class CubeGUI:
                         j*gap+200*x,  i*gap+y, self.width/3, self.height/3])
 
     def draw(self):
+        """
+        Draw the cube
+        """
+
         self.win.fill((0, 0, 0))
         gap = self.width/3
         for face in range(len(self.faces)):

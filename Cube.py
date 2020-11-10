@@ -72,7 +72,7 @@ class Cube:
 
     def showCube(self):
         """
-        Prints the cube in a manner that is easy to contemplate
+        Prints the cube in a manner that is easy to read
         """
 
         for i in range(0, 3, 1):
