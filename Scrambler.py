@@ -64,7 +64,7 @@ class Scrambler:
         @param scramble - tuple containing the scramble
         @param cube - object of type Cube
         """
-        
+
         for x in scramble:
             face = x[0]
             if len(x) < 2:
