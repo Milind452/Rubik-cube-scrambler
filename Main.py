@@ -1,7 +1,7 @@
 import pygame 
 from Cube import *
 from Scrambler import *
-# from CubeGUI import *
+from CubeGUI import *
 
 cube = Cube()
 scrambler = Scrambler()
@@ -12,18 +12,18 @@ scrambler.showScramble(scramble)
 cube.showCube()
 
 
-# win = pygame.display.set_mode((1200, 900))
-# pygame.display.set_caption("Faces")
-# gui = CubeGUI(9, 12, 300, 300, win)
-# run = True
-# while run:
-# 	for event in pygame.event.get():
-# 		if event.type == pygame.QUIT:
-# 			run = False
-# 		gui.draw()
-# 		gui.grid()
+win = pygame.display.set_mode((1200, 900))
+pygame.display.set_caption("Faces")
+gui = CubeGUI(9, 12, 300, 300, win, cube.cube)
+run = True
+while run:
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			run = False
+		gui.draw()
+		gui.grid()
 
-# 		pygame.display.update()
+		pygame.display.update()
 
 
-# pygame.quit()
+pygame.quit()

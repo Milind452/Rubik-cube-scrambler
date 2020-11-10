@@ -4,7 +4,7 @@ pygame.font.init()
 
 
 class CubeGUI:
-    faces = cube
+    # faces = cube
     # colors
     white = [255, 255, 255]
     green = [0, 255, 0]
@@ -13,12 +13,13 @@ class CubeGUI:
     yellow = [255, 255, 0]
     red = [255, 0, 0]
 
-    def __init__(self, rows, cols, width, height, win):
+    def __init__(self, rows, cols, width, height, win, cube):
         self.rows = rows
         self.cols = cols
         self.width = width
         self.height = height
         self.win = win
+        self.faces = cube
 
     def grid(self):
         for i in range(self.rows+1):
