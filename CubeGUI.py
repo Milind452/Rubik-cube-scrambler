@@ -46,36 +46,36 @@ class CubeGUI:
             y = 0
         elif(face == 5):
             x = 1
-            y = 600
+            y = 400
         else:
             x = face - 1
-            y = 300
+            y = 200
 
         for i in range(0, 3):
             for j in range(0, 3):
                 if(self.faces[face][i][j] == 'w'):
                     pygame.draw.rect(self.win, self.white, [
-                        j*gap+300*x,  i*gap+y, self.width/3, self.height/3])
+                        j*gap+200*x,  i*gap+y, self.width/3, self.height/3])
 
                 if(self.faces[face][i][j] == 'g'):
                     pygame.draw.rect(self.win, self.green, [
-                        j*gap+300*x,  i*gap+y, self.width/3, self.height/3])
+                        j*gap+200*x,  i*gap+y, self.width/3, self.height/3])
 
                 if(self.faces[face][i][j] == 'b'):
                     pygame.draw.rect(self.win, self.blue, [
-                        j*gap+300*x,  i*gap+y, self.width/3, self.height/3])
+                        j*gap+200*x,  i*gap+y, self.width/3, self.height/3])
 
                 if(self.faces[face][i][j] == 'o'):
                     pygame.draw.rect(self.win, self.orange, [
-                        j*gap+300*x,  i*gap+y, self.width/3, self.height/3])
+                        j*gap+200*x,  i*gap+y, self.width/3, self.height/3])
 
                 if(self.faces[face][i][j] == 'r'):
                     pygame.draw.rect(self.win, self.red, [
-                        j*gap+300*x,  i*gap+y, self.width/3, self.height/3])
+                        j*gap+200*x,  i*gap+y, self.width/3, self.height/3])
 
                 if(self.faces[face][i][j] == 'y'):
                     pygame.draw.rect(self.win, self.yellow, [
-                        j*gap+300*x,  i*gap+y, self.width/3, self.height/3])
+                        j*gap+200*x,  i*gap+y, self.width/3, self.height/3])
 
     def draw(self):
         self.win.fill((0, 0, 0))

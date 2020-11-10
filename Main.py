@@ -12,9 +12,11 @@ scrambler.showScramble(scramble)
 cube.showCube()
 
 
-win = pygame.display.set_mode((1200, 900))
+win = pygame.display.set_mode((800, 600))
+# win = pygame.display.set_mode((1366, 768))
+# pygame.transform.scale(picture(1366, 768))
 pygame.display.set_caption("Faces")
-gui = CubeGUI(9, 12, 300, 300, win, cube.cube)
+gui = CubeGUI(9, 12, 200, 200, win, cube.cube)
 run = True
 while run:
 	for event in pygame.event.get():
