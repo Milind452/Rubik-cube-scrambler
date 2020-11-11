@@ -12,3 +12,4 @@ C(")(")	  C(")(")   C(")(")
 > - Dinesh Kannan
 
 ## Description
+> This project is a Rubik's cube scrambler with pygame
