@@ -26,4 +26,4 @@ jobs:
         pip install pygame
         
     - name: Python build
-      run: python3 Main.py
+      run: python3 3.Implementation/Main.py
